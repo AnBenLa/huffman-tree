@@ -14,7 +14,10 @@ int main() {
     Node h{'h', 3, nullptr, nullptr};
     std::vector<Node *> new_elements{&a, &b, &c, &d, &e, &f, &g, &h};
 
+    // initialises a new tree with huffman structure
     Tree huff_tree{new_elements};
+    //prints out the new binary values for each char
     huff_tree.getNodeValues(huff_tree.source, "");
+	std::cin.get();
     return 0;
 }

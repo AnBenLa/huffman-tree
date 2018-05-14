@@ -8,6 +8,9 @@ struct Node{
     Node* right_child;
 };
 
+/*
+ * Defines an order for Node pointer by their node value
+ */
 struct less_than_value{
     inline bool operator()(const Node* node1, const Node* node2){
         return ((*node1).value < (*node2).value);
